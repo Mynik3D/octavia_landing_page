@@ -170,7 +170,7 @@ display: inline;
   	max-width: 100%;
 
   	&__top{
-  		padding-top: 130px;
+  		padding: 130px 0;
   		position: relative;
   			&__inner{
   	max-width: 1170px;
@@ -184,19 +184,21 @@ display: inline;
 				font: 24px/24px "Proxima Nova", sans-serif;
 				font-weight: bold;
 				letter-spacing: 5px;
-				    margin: 20px 0 33px;
+				 margin: 20px 0 48px;
+				 position: relative;
 				&:after{
 					content: "";
 				    background: url(../images/separator.png);
 				    width: 33px;
 				    height: 6px;
 				    position: absolute;
-				    left: 620px;
-				   top: 190px;
+				    left: 576px;
+					 top: 52px;
 				}
 			}
 			p{
 				font: 18px/44px "Proxima Nova", sans-serif;
+				color: #8198a0;
 
 
 			}
@@ -206,12 +208,40 @@ display: inline;
  &__bottom{
  	background: url(../images/effect.png);
  	position: relative;
+ 	padding-top: 130px;
 
  	&__inner{
  		max-width: 1170px;
  	}
  	&__title{
  		text-align: center;
+ 		h3{
+ 			font: 24px/24px "Proxima Nova", sans-serif;
+ 			color: #28363d;
+ 			font-weight: bold;
+ 			text-transform: uppercase;
+ 			margin: 20px 0 48px;
+ 			position: relative;
+ 			letter-spacing: 5px;
+ 			
+ 			.aqua{
+ 				color: #1ed6cb;
+ 			}
+ 				&:after{
+					content: "";
+				    background: url(../images/separator.png);
+				    width: 33px;
+				    height: 6px;
+				    position: absolute;
+				    left: 573px;
+    				top: 52px;
+				}
+ 		}
+ 		p{
+ 			font: 18px/44px "Proxima Nova", sans-serif;
+ 			color: #8198a0;
+ 			margin-top: 15px;
+ 		}
  	}
  }
   }
