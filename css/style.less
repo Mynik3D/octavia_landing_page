@@ -363,13 +363,19 @@ p{
 		max-width: 1170px;
 	}
 	&__content{
-		display: flex;
-  justify-content: center;
-    &-read{
-		width: 50%;
-		&--img{
+	    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+
+		&-img:first-child{
 			background-image: url(../images/profile-photo-1.jpg);
 		}
+		&-img{
+			background-image: url(../images/profile-photo-2.jpg);
+		}
+
 		&--icon{
 			    display: flex;
     flex-flow: wrap;
@@ -393,7 +399,7 @@ p{
 				}
 			}
 		}
-    }
+    
 	}
 }
 
