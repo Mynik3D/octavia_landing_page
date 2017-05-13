@@ -3,6 +3,12 @@ body{background: #fff;  padding: 0; margin: 0;
 .wrap{
 	padding-top: 80px;
 }
+.aqua{
+	color: #1ed6cb;
+}
+h3{
+	margin: 0;
+}
 
 .header{
 	background: #28363d;
@@ -230,9 +236,7 @@ display: inline;
  			position: relative;
  			letter-spacing: 5px;
  			
- 			.aqua{
- 				color: #1ed6cb;
- 			}
+ 			
  				&:after{
 					content: "";
 				    background: url(../images/separator.png);
@@ -259,16 +263,17 @@ display: inline;
    
 
      &__elem{
- 	text-align: center;
+     	width: 25%;
+     	text-align: center;
+ 	
  	    display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 33.3333%;
+    -webkit-flex: 25%;
     -moz-box-flex: 0;
-    -ms-flex: 0 33.3333%;
-    flex: 0 23.3333%;
-    text-align: center;
+    -ms-flex: 25%;
+    flex: 25%;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -moz-box-pack: start;
@@ -311,11 +316,86 @@ p{
  }
 
  }
-
-
   }
+.quality{
+	background: #28363d;
+	padding: 60px 0;
+	border-bottom: 2px solid #1ed6cb;
+	border-top: 2px solid #1ed6cb;
+	&__inner{
+		max-width: 1170px;
+	}
+	&__block{
+		text-align: center;
+		h3{
+			font: 28px/44px "Proxima Nova", sans-serif;
+			color: #fff;
+		}
+		a{
+			font: 14px/44px "Proxima Nova Semibold", sans-serif;
+			color: #28363d;
+			text-transform: uppercase;
+			padding: 16px 50px;
+			line-height: 52px;
+			background: #fff;
+			border-radius: 10px;
+			text-decoration: none;
+			.fa{
+				padding-left: 25px;
+				color: #1ed6cb;
+				font-size: 16px;
+				font-weight: bold;
+			}
+			&:hover{
+				background: #1ed6cb;
+				color: #fff;
+			}
+			&:hover .fa{
+				color: #fff;
+			}
+		}
+	}
+}
+.project{
+	max-width: 100%;
 
-
+	&__inner{
+		max-width: 1170px;
+	}
+	&__content{
+		display: flex;
+  justify-content: center;
+    &-read{
+		width: 50%;
+		&--img{
+			background-image: url(../images/profile-photo-1.jpg);
+		}
+		&--icon{
+			    display: flex;
+    flex-flow: wrap;
+    align-content: space-between;
+		}
+		img{
+			width: 100%;
+		}
+		&--desc{
+			padding: 50px;
+			h3{
+				display: inline-block;
+				font: 16px "Proxima Nova Semibold", sans-serif;
+				text-transform: uppercase;
+				color: #28363d;
+				padding-right: 45px;
+				i.fa{
+					font-size: 30px;
+					padding-right: 20px;
+					color: #1ed6cb;
+				}
+			}
+		}
+    }
+	}
+}
 
 
 .header__inner,.post-header,
@@ -325,7 +405,11 @@ p{
 .services__inner,
 .services__top,
 .services__top__inner,
-.services__bottom__inner{
+.services__bottom__inner,
+.quality,
+.quality__inner,
+.project,
+.project__inner{
  	  margin-right: auto;
     	margin-left: auto;
  }
