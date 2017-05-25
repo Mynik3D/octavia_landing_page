@@ -1,0 +1,44 @@
+
+.slide-main{
+	width: 690px;
+	text-align: center;
+}
+.slide-desc{
+	color: #fff;
+	font-family: "Proxima Nova";
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+	text-transform: uppercase;
+	margin-bottom: 73px;
+	letter-spacing: 6px;
+}
+.slider p{
+		
+		color: #1e292f;
+font-family: "Proxima Nova";
+font-size: 18px;
+font-weight: 400;
+line-height: 36px;
+	
+}
+.arrow{
+	position: relative;
+
+}
+
+
+.arrow i.fa{
+margin-top: 3px;
+font-size: 33px;
+color: initial;
+position: absolute;
+ top: -95px;
+
+}
+.slick-prev{
+	left: -200px;
+}
+.slick-next{
+	right: -200px;
+}
